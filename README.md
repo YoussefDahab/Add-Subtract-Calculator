@@ -1,4 +1,4 @@
-# Add-Subtract-Calculator
+# README
 
 To run calc.c : 
 
