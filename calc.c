@@ -22,7 +22,9 @@ void add(const char a[], const char b[], char res[])
   {
     for (i = strlen(a) - 1; i >= 0; i--)
     {
-      temp = (a[i] - '0') + (b[i] - '0') + carry_digit;
+      /* convert char to integer by subtracting '0' */
+      
+      temp = (a[i] - '0') + (b[i] - '0') + carry_digit;               
       res[i] = ((a[i] - '0') + (b[i] - '0') + carry_digit) % 10 + '0';
       carry_digit = temp / 10;
     }
